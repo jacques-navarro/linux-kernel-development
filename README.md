@@ -1,5 +1,13 @@
 # Linux Kernel Development
 
+## Resources
+
+[Linux Kernel Documentation](https://www.kernel.org/doc/html/latest/index.html)
+
+[kernelnewbies.org](https://kernelnewbies.org/)
+
+[A Beginner’s Guide to Linux Kernel Development (LFD103)](https://training.linuxfoundation.org/training/a-beginners-guide-to-linux-kernel-development-lfd103/)
+
 ## Build a kernel from source
 
 1. Clone kernel source tree  
