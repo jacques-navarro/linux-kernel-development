@@ -25,3 +25,15 @@
 4. Install modules
 5. Set up GRUB
 6. Reboot with new kernel
+
+## Kernel scripts
+
+Display maintainers for a subsystem
+```
+scripts/get_maintainer.pl --nogit -f <subsystem>
+```
+
+Configuration diff tool
+```
+scripts/diffconfig .config.old .config
+```
