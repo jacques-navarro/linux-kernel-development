@@ -37,3 +37,52 @@ Configuration diff tool
 ```
 scripts/diffconfig .config.old .config
 ```
+
+## Raspberry Pi
+
+### Raspberry Pi OS specific commands
+
+[Raspberry Pi OS Kernel Documentation](https://github.com/raspberrypi/documentation/blob/develop/documentation/asciidoc/computers/linux_kernel/about-kernel.adoc)  
+[Update Documentation](https://github.com/raspberrypi/documentation/blob/develop/documentation/asciidoc/computers/os/updating.adoc)
+
+Full upgrade including stable kernel
+```
+sudo apt update && sudo apt full-upgrade
+```
+
+Kernel build dependencies
+```
+sudo apt install bc bison flex libssl-dev make libncurses5-dev
+```
+
+Required to compile modules
+```
+sudo apt install linux-headers-rpi-v8
+```
+
+Install gcc, GNU make
+```
+sudo apt install -y build-essential
+```
+
+Reboot is required if a new kernel was installed during upgrade
+```
+sudo reboot
+```
+
+### Non-Raspberry Pi OS commands
+
+```
+sudo apt update && sudo apt upgrade -y
+```
+
+Kernel headers required to compile modules
+
+```
+sudo apt install -y linux-headers-raspi
+```
+
+Install gcc, GNU make
+```
+sudo apt install -y build-essential
+```
