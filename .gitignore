@@ -1,0 +1,6 @@
+### Module build files ###
+*.ko*
+*.mod*
+*.o*
+*.order*
+*.symvers*
